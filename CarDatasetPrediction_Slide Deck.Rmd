@@ -1,0 +1,69 @@
+---
+title: "Predicting stopping distance for cars"
+subtitle: "1920 Cars dataset from R documentation"
+author: "Carlos Calderon"
+date: "December 17, 2016"
+output: 
+  ioslides_presentation: 
+    fig_height: 4
+    fig_width: 7
+    highlight: kate
+    transition: faster
+widescreen: true
+autosize: true
+font: 'helvetica'
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Goal
+
+This is the final project of developing data products by Coursera. 
+
+The objective of my shiny app is to predict the stopping distance in feet of a 1920 car by using the speed in mph as input from the user (YOU). 
+
+The following slides will explain the HOW of my shiny app "CarDataset Prediction". 
+
+Source:
+Cars dataset from orginal R documentation.
+
+## Data Processing
+We can see that the data is a simple data frame with two variables, speed [mph] and distance [feet].
+```{r,comment ="", warning=FALSE, message=FALSE}
+# Load data set
+head(cars)
+
+```
+
+## Plot the data
+Based on the scatterplot of the data, a linear fit is a reasonable place to start to obtain a prediction.
+
+```{r,comment="", warning=FALSE, message=FALSE}
+plot (cars)
+```
+
+## Fit a linear model
+We observe an okay fit of our model to the data.
+```{r,comment="",warning=FALSE, message=FALSE}
+model<-lm(dist ~ speed, data = cars)
+par(mfrow = c(2,2))
+plot(model)
+```
+
+## Give it a try!
+
+Here is the URL to my shiny app, enjoy!
+
+http://cacalderon.shinyapps.io/CarDatasetPrediction
+
+If the link does not work for you, try to copy and paste in your web browser. 
+
+```{r,comment="",warning=FALSE, message=FALSE}
+# http://cacalderon.shinyapps.io/CarDatasetPrediction
+```
+
+
+
+
