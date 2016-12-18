@@ -64,6 +64,14 @@ If the link does not work for you, try to copy and paste in your web browser.
 # http://cacalderon.shinyapps.io/CarDatasetPrediction
 ```
 
+The UI.R and Server.R files for the shiny app can be found in GitHub
 
+https://github.com/cacalderon/Data-Products-Final-Project
+
+If the link does not work for you, try to copy and paste in your web browser. 
+
+```{r,comment="",warning=FALSE, message=FALSE}
+# https://github.com/cacalderon/Data-Products-Final-Project
+```
 
 
